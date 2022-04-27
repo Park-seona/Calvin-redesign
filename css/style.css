@@ -10,6 +10,11 @@ a {
     text-decoration: none;
     color: inherit;
 }
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
 img {
     vertical-align: top;
     border: 0;
@@ -17,7 +22,6 @@ img {
 body {
     color: #333333;
 }
-
 /* 레이아웃 */
 .wrap {
     width: 1920px;
@@ -26,13 +30,15 @@ body {
 header {
     width: 1200px;
     height: 120px;
+    position: relative;
+    z-index: 100;
 }
 header .nav_bg {
     width: 1920px;
     height: 48px;
     background-color: black;
 }
-header .nav_box {
+header .topbar_wrap {
     width: 1200px;
     height: 72px;
     margin-left: 360px;
@@ -44,11 +50,53 @@ header .logo_box {
     height: 72px;
     background: #bbb;
 }
-header .name_box {
+header .nav_box {
     float: left;
     width: 900px;
     height: 72px;
     background: #ccc;
+}
+header .nav_box ul.main {
+    width: 100%;
+    text-align: center;
+}
+header .nav_box ul.main>li {
+    float: left;
+    width: 11%;
+    position: relative;
+}
+header .nav_box ul.main>li>a {
+    display: block;
+    width: 100%;
+    height: 72PX;
+    line-height: 72px;
+    box-sizing: content-box;
+    font-size: 16px;
+    color: #979494;
+}
+header .nav_box ul.main>li:hover>a {
+    color: #676767;
+}
+header .nav_box ul.main>li>ul.sub_menu {
+    position: absolute; 
+    left: 0;
+    top: 72px;
+    width: 100%;
+    line-height: 20px; 
+    box-sizing: content-box;
+    background: #ffffff;
+    font-size: 16px;
+    display: none;
+} 
+header .nav_box ul.main>li>ul.sub_menu>li {
+    height: 20px;
+    padding-top: 10px;
+    padding-bottom: 7px;
+}
+header .nav_box ul.main>li>ul.sub_menu>li>a {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 ul.slide {
     width: 1920px;
@@ -66,5 +114,8 @@ ul.slide li {
 .contents {
     width: 1200px;
     background: #ddd;
+}
+.contents .new_banner {
+    
 }
 
