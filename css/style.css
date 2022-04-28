@@ -130,26 +130,23 @@ ul.slide li {
     padding-top: 16px;
     text-align: center;
 }
-.contents .new_banner .new_nav .item{
-    display: inline;
-}
-.contents .new_banner .new_nav .item .item1 {
+.contents .new_banner .new_nav .item1 {
     width: 378px;
     height: 408px;
 }
-.contents .new_banner .new_nav .item .item1 img {
+.contents .new_banner .new_nav .item1 img {
     width: 375.75px;
     height: 370px;
 }
-.contents .new_banner .new_nav .item .item1 .new1_title {
+.contents .new_banner .new_nav .item1 .new1_title {
     font-size: 12px;
     color: #424242;
 }
-.contents .new_banner .new_nav .item .item2 {
+.contents .new_banner .new_nav .item2 {
     width: 378px;
     height: 408px;
 }
-.contents .new_banner .new_nav .item .item2 img {
+.contents .new_banner .new_nav .item2 img {
     width: 375.75px;
     height: 370px;
 }
