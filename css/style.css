@@ -42,19 +42,16 @@ header .topbar_wrap {
     width: 1200px;
     height: 72px;
     margin-left: 360px;
-    background: #aaa;
 }
 header .logo_box {
     float: left;
     width: 300px;
     height: 72px;
-    background: #bbb;
 }
 header .nav_box {
     float: left;
     width: 900px;
     height: 72px;
-    background: #ccc;
 }
 header .nav_box ul.main {
     width: 100%;
@@ -113,9 +110,80 @@ ul.slide li {
 }
 .contents {
     width: 1200px;
-    background: #ddd;
+    height: auto;
+    margin-left: 360px;
 }
 .contents .new_banner {
-    
+    width: 1200px;
+    height: 560px;
+    margin-top: 80px;
+    background: #bbb;
+}
+.contents .new_banner .new_nav {
+    width: 266px;
+    height: 40px;
+    margin: 0 auto;
+    background: #fff;
+}
+.contents .new_banner .new_nav .arriv_title{
+    font-size: 36px;
+    padding-top: 16px;
+    text-align: center;
+}
+.contents .new_banner .new_nav .item{
+    display: inline;
+}
+.contents .new_banner .new_nav .item .item1 {
+    width: 378px;
+    height: 408px;
+}
+.contents .new_banner .new_nav .item .item1 img {
+    width: 375.75px;
+    height: 370px;
+}
+.contents .new_banner .new_nav .item .item1 .new1_title {
+    font-size: 12px;
+    color: #424242;
+}
+.contents .new_banner .new_nav .item .item2 {
+    width: 378px;
+    height: 408px;
+}
+.contents .new_banner .new_nav .item .item2 img {
+    width: 375.75px;
+    height: 370px;
+}
+.contents .new_banner .new_nav .item3 {
+    width: 378px;
+    height: 408px;
+}
+.contents .new_banner .new_nav .item3 img {
+    width: 375.75px;
+    height: 370px;
+}
+.contents .collection_banner {
+    width: 1200px;
+    height: 560px;
+    margin-top: 80px;
+    background: #ccc;
+}
+.contents .best_banner {
+    width: 1200px;
+    height: 720px;
+    margin-top: 40px;
+    background: #ddd;
+}
+.contents .preview_banner {
+    width: 1200px;
+    height: 640px;
+    margin-top: 80px;
+    background: #aaa;
+}
+.lookbook_banner {
+    width: 1500px;
+    height: 640px;
+    margin-left: 204px;
+    margin-top: 80px;
+    background: #bbb;
 }
 
