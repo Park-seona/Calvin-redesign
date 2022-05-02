@@ -504,7 +504,7 @@ ul.slide li {
     top: 50%;
     transform: translate(-50%, -50%);
     width: 223px;
-    height: 55px;
+    height: 50px;
     margin-top: 10px;
     background: #fff;
     font-size: 17px;
@@ -540,7 +540,6 @@ ul.slide li {
 .contents .preview_banner .prev2 .prev2_row1 .item2_wrapper .item2 {
     margin-top: -11px;
 }
-.contents .preview_banner .prev2 .prev2_row1 .item2_wrapper .item2 img {}
 .contents .preview_banner .prev2 .prev2_row1 .item2_wrapper .item2_box {
     position: absolute;
     left: 30px;
@@ -567,7 +566,6 @@ ul.slide li {
 .contents .preview_banner .prev2 .prev2_row1 .item3_wrapper .item3 {
     margin-top: -11px;
 }
-.contents .preview_banner .prev2 .prev2_row1 .item3_wrapper .item3 img {}
 .contents .preview_banner .prev2 .prev2_row1 .item3_wrapper .item3_box {
     position: absolute;
     left: 30px;
@@ -587,7 +585,6 @@ ul.slide li {
     color: #000;
     font-weight: bold;
 }
-
 .contents .preview_banner .prev2 .prev2_row2 {
     width: 100%;
 }
@@ -653,6 +650,9 @@ ul.slide li {
     margin-top: 80px;
     margin-bottom: 96px;
     background: #bbb;
+}
+.lookbook_banner .look_Wrap {
+    float: left;
 }
 .footer_Wrap {
     width: 1920px;
