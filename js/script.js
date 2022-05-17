@@ -36,5 +36,5 @@ $(document).ready(function(){
     $(".contents .item2_wrapper .item2 img,.item2_wrapper .item2_box").mouseleave(function(){
         $(".contents .collection_banner .collec_nav .item2_wrapper .item2_box").stop().animate({"bottom":"-50px"},280);
     });
-
+    
 });
