@@ -9,7 +9,7 @@ $(document).ready(function(){
     });
 
     //이미지 슬라이드
-    $("ul.slide li").eq(0).siblings().hide();
+    $(".slide li").eq(0).siblings().hide();
 
     var slideI=0;
     setInterval(function(){
@@ -19,8 +19,8 @@ $(document).ready(function(){
         } else {
             slideI=0;
         }
-    $("ul.slide li").eq(slideI).siblings().fadeOut(500);
-    $("ul.slide li").eq(slideI).fadeIn(500);
+    $(".slide li").eq(slideI).siblings().fadeOut(500);
+    $(".slide li").eq(slideI).fadeIn(500);
     },3000);
 
     //컬렉션 배너

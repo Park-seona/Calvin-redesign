@@ -22,6 +22,11 @@ img {
 body {
     color: #333333;
 }
+/* 라이브러리 */
+.con {
+    max-width: 500px ;
+    margin: 0 auto ;
+}
 /* 레이아웃 */
 .wrap {
     width: 1920px;
@@ -85,12 +90,7 @@ header .nav_box ul.main>li {
     width: 11%;
     /* column-width: 30px; */
     position: relative;
-    word-spacing: 3em;
 }
-/* header .nav_box ul.main>li>img {
-    float: left;
-    padding-left: 10px;
-} */
 header .nav_box ul.main>li>a {
     display: block;
     width: 100%;
