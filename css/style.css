@@ -21,19 +21,20 @@ img {
 }
 body {
     color: #333333;
+    overflow-x: hidden;
 }
 /* 라이브러리 */
-.con {
+/* .con {
     max-width: 500px ;
     margin: 0 auto ;
-}
+} */
 /* 레이아웃 */
 .wrap {
     width: 1920px;
     margin: 0 auto;
 }
 header {
-    width: 1200px;
+    width: 1920px;
     height: 120px;
     position: relative;
     z-index: 100;
@@ -51,9 +52,10 @@ header {
 }
 .top-banner .arrow-left {
     padding-left: 360px;
+    cursor: pointer;
 }
 .top-banner .arrow-left li {
-   padding-top: 12px;
+    padding-top: 12px;
 }
 .top-banner .text {
     text-align: center;
@@ -62,12 +64,13 @@ header {
 }
 .top-banner .arrow-right {
     padding-right: 360px;
+    cursor: pointer;
 }
 .top-banner .arrow-right li {
     padding-top: 12px;
  }
 header .topbar_wrap {
-    width: 1200px;
+    width: 1920px;
     height: 72px;
     margin-left: 360px;
 }
@@ -149,106 +152,50 @@ ul.slide li {
     height: auto;
     margin-left: 360px;
 }
-.contents .new_banner {
-    width: 1200px;
-    height: 560px;
-    margin-top: 80px;
-    /* background: #bbb; */
-}
-.contents .new_banner .new_nav {
-    /* width: 266px; */
+.contents .new_nav {
+    width: 266px; 
     height: 40px;
     margin: 0 auto;
     background: #fff;
 }
-.contents .new_banner .new_nav .arriv_title{
+.contents .new_nav .arriv_title { 
     font-size: 36px;
     padding-top: 26px;
     text-align: center;
+} 
+.contents .con {
+    width: 1200px; 
+    margin: 0 auto;
 }
-.flex {
-    display: flex;
-    margin-top: 12px;
+.contents .con .slide-box-1 {
+    width: 1200px;
+    height: 560px;
+    margin-top: 80px;
 }
-.justify-between {
-    justify-content: space-between;
-}
-.contents .new_banner .new_nav .item1 {
-    width: 378px;
-    height: 408px;
-}
-.contents .new_banner .new_nav .item1 img {
-    width: 375.75px;
-    height: 370px;
-}
-.contents .new_banner .new_nav .item1 .new1_title {
-    font-size: 12px;
-    color: #424242;
-}
-.contents .new_banner .new_nav .item1 .new1_title p {
-    font-size: 12px;
-    color: #000;
-}
-.contents .new_banner .new_nav .item2 {
-    width: 378px;
-    height: 408px;
-}
-.contents .new_banner .new_nav .item2 img {
-    width: 375.75px;
-    height: 370px;
-}
-.contents .new_banner .new_nav .item2 .new2_title {
-    font-size: 12px;
-    color: #424242;
-}
-.contents .new_banner .new_nav .item2 .new2_title p {
-    font-size: 12px;
-    color: #000;
-}
-.contents .new_banner .new_nav .item3 {
-    width: 378px;
-    height: 408px;
-}
-.contents .new_banner .new_nav .item3 img {
-    width: 375.75px;
-    height: 370px;
-}
-.contents .new_banner .new_nav .item3 .new3_title {
-    font-size: 12px;
-    color: #424242;
-}
-.contents .new_banner .new_nav .item3 .new3_title p {
-    font-size: 12px;
-    color: #000;
-}
-.contents .new_banner .slick_wrap {
+.contents .con .swiper {
     width: 100%;
-    position: relative;
+    height: 470px;
 }
-.contents .new_banner .slick_wrap .new_slick .slick_btn {
-    position: absolute;
-    left: 0;
-    top: 23px;
-    width: 244px;
-    height: 8px;
-    background: #DFDDDD;
-    opacity: 0.4;
-    box-sizing: border-box;
-    border: 1px solid #DFDDDD;
-    border-radius: 20px 20px 20px 20px;
+.contents .con .swiper-slide {
+    display: block;
 }
-.contents .new_banner .slick_wrap .new_slick .slick_btn:hover {
-    background: #000;
-    opacity: 0.5;
-    cursor: pointer;
+.contents .con .swiper-slide > a {
+    display: inline-block;
+    height: 370px;
+    overflow: hidden;
 }
-.contents .new_banner .slick_wrap .new_slickline{
-    position: absolute;
-    left: 0;
-    top: 28px;
+.contents .con .swiper-slide > a > img {
+    width: 375.75px;
+    height: 370px;
+}
+.contents .con .swiper-slide .new1_title > span {
+    display: block;
+}
+.contents .con .slide-box-1 .swiper-scrollbar {
     width: 1183px;
-    background: #DFDDDD;
-}
+    height: 8px;
+    cursor: pointer;
+} 
 .contents .collection_banner {
     width: 1200px;
     height: 560px;
@@ -726,8 +673,8 @@ ul.slide li {
 .look_con .lookbook_wrap .looktit_box .shop_btn {
     position: absolute;
     left: 50%;
-    top: 55%;
-    transform: translate(-50%, -55%);
+    top: 60%;
+    transform: translate(-50%, -60%);
     width: 223px;
     height: 50px;
     margin-top: 10px;
@@ -769,7 +716,7 @@ ul.slide li {
 .footer1_con .footer1_wrap .box {
     float: left;
     width: 176px;
-    height: 220px;
+    height: 232px;
     padding-left: 10px;
 }
 .footer1_con .footer1_wrap .box h2 {
@@ -798,7 +745,7 @@ ul.slide li {
     float: left;
     width: 100%;
     padding-left: 10px;
-    padding-top: 150px;
+    padding-top: 130px;
 }
 .footer1_con .footer1_wrap .copy li {
     float: left;

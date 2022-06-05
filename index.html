@@ -8,15 +8,8 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/script.js"></script>
-    <!--slick slider 필요 태그 st-->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css">
-    <!-- jQuery CDN -->
-    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <!-- slick Carousel CDN -->
-    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
-    <!--slick slider 필요 태그 en-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 </head>
 <body>
 <div class="wrap">
@@ -120,45 +113,87 @@
             </div>
         </div>
     </header>
-    <div class="slide">
+    <ul class="slide">
         <li><a href="#"><img src="images/메인 1.png" alt="Calvin"></a></li>
         <li><a href="#"><img src="images/main2.jpg" alt="Calvin"></a></li>
         <li><a href="#"><img src="images/main3.jpg" alt="Calvin"></a></li>
-    </div>
+    </ul>
     <div class="contents">
-        <section class="new_banner clearfix">
-        <div class="new_nav">
-            <div class="arriv_title">NEW ARRIVALS</div>
-            <div class="flex justify-between">
-                <div class="item1">
-                    <a href="#">
-                        <img src="images/new1.png" alt="뉴어라벌스1">
-                    </a>
-                    <div class="new1_title">남성 레귤러핏 인스티튜셔널 로고 스트레치 반팔 티셔츠 <p>KRW 45,000</p></div>
-                </div>
-                <div class="item2">
-                    <a href="#">
-                        <img src="images/new2.png" alt="뉴어라벌스2">
-                    </a>
-                    <div class="new2_title">여성 스트레이핏 모노그램 로고 반팔 셔츠 <p>KRW 79,000</p></div>
-                </div>
-                <div class="item3">
-                    <a href="#">
-                        <img src="images/new3.png" alt="뉴어라벌스3">
-                    </a>
-                    <div class="new3_title">여성 인스티튜셔널 로고 보이프렌드핏 스웨트셔츠 <p>KRW 89,000</p></div>
+            <div class="new_nav">
+                <div class="arriv_title">NEW ARRIVALS</div>
+            </div>
+            <div class="con">
+
+                <!-- 슬라이드 박스로 구분지어 묶어 놓는 것이 좋습니다 -->
+                <div class="slide-box-1">
+                  <!-- 슬라이더 메인 컨테이너 -->
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <!-- 슬라이드 -->
+                      <div class="swiper-slide slide-1">
+                        <a href="#">
+                          <img src="images/new1.png" alt="뉴어라벌스1">
+                        </a>
+                        <div class="new1_title">
+                          <span>남성 레귤러핏 인스티튜셔널 로고 스트레치 반팔 티셔츠</span>
+                          <span>KRW 45,000</span>
+                        </div>
+                      </div>
+                      <div class="swiper-slide slide-2">
+                        <a href="#">
+                          <img src="images/new2.png" alt="뉴어라벌스2">
+                        </a>
+                        <div class="new1_title">
+                          <span>여성 스트레이핏 모노그램 로고 반팔 셔츠</span>
+                          <span>KRW 45,000</span>
+                        </div>
+                      </div>
+                      <div class="swiper-slide slide-3">
+                        <a href="#">
+                          <img src="images/new3.png" alt="뉴어라벌스3">
+                        </a>
+                        <div class="new1_title">
+                          <span>여성 인스티튜셔널 로고 보이프렌드핏 스웨트셔츠</span>
+                          <span>KRW 45,000</span>
+                        </div>
+                      </div>
+                      <div class="swiper-slide slide-4"> 
+                        <a href="#">
+                        <img src="images/new4.png" alt="뉴어라벌스4">
+                        </a>
+                        <div class="new1_title">
+                            <span>남성 레귤러핏 슬리브 모노그램 로고 반팔 티셔츠</span>
+                            <span>KRW 39,000</span>
+                        </div>
+                      </div>
+                      <div class="swiper-slide slide-5">
+                        <a href="#">
+                        <img src="images/new5.png" alt="뉴어라벌스5">
+                        </a>
+                        <div class="new1_title">
+                            <span>남성 릴렉스핏 헤비 코튼 크루넥 반팔 티셔츠</span>
+                            <span>KRW 55,000</span>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+              
+                    <!-- 화살표, 필요 없으니 제거 -->
+                    <!--       <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div> -->
+              
+                    <!-- 스크롤바 -->
+                    <div class="swiper-scrollbar"></div>
                 </div>
             </div>
-            <div class="slick_wrap">
+            <!-- <div class="slick_wrap">
             <div class="new_slick">
                 <input type="button" class="slick_btn" value="">
             </div>
             <div class="new_slickline">
-                <!-- <li><a href="#"></a></li> -->
-            </div>
-            </div>
-        </div>
-        </section>
+                <li><a href="#"></a></li> -->
+            <!-- </div> -->
+            <!-- </div> -->
         <section class="collection_banner">
             <div class="collec_nav">
                 <div class="flex justify-between">
@@ -246,7 +281,7 @@
                 </div>
             </div>
         </section>
-        <div class="preview_banner">
+        <section class="preview_banner">
             <div class="prev1">
                 <div class="item1_wrapper">
                 <div class="item1">
@@ -309,11 +344,10 @@
                         <li>여성 액티브 아이콘 7/8 우븐 팬츠 <p>KRW 129,000&nbsp;KRW 90,300&nbsp;30% 할인</p></li>
                     </div>
                     </div>
-
                 </div>
                 </div>
             </div>
-        </div>
+        </section>
     <section class="look_con">
         <div class="lookbook_wrap">
             <div class="look1 clearfix">

@@ -9,7 +9,7 @@ $(document).ready(function(){
     });
 
     //이미지 슬라이드
-    $(".slide li").eq(0).siblings().hide();
+    $("ul.slide li").eq(0).siblings().hide();
 
     var slideI=0;
     setInterval(function(){
@@ -19,9 +19,27 @@ $(document).ready(function(){
         } else {
             slideI=0;
         }
-    $(".slide li").eq(slideI).siblings().fadeOut(500);
-    $(".slide li").eq(slideI).fadeIn(500);
+    $("ul.slide li").eq(slideI).siblings().fadeOut(500);
+    $("ul.slide li").eq(slideI).fadeIn(500);
     },3000);
+    
+    //뉴배너 스와이퍼
+    const swiper = new Swiper('.swiper', {
+        slidesPerView: 3, // 한 화면에 보일 슬라이드 개수
+        spaceBetween: 20, // 슬라이드 간의 간격 설정
+      
+        // 화살표 필요 없으니 제거
+        // navigation: {
+        //   nextEl: '.swiper-button-next',
+        //   prevEl: '.swiper-button-prev',
+        // },
+      
+        // 스크롤바 필요 !
+        scrollbar: {
+          el: '.swiper-scrollbar',
+          draggable: true, // 지우면 `false` 기본값, 스크롤바 드래그해서 이동 가능
+        },
+    });
 
     //컬렉션 배너
     $(".contents .item1_wrapper .item1 img,.item1_wrapper .item1_box").mouseenter(function(){
