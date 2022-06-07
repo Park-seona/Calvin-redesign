@@ -21,7 +21,6 @@ img {
 }
 body {
     color: #333333;
-    overflow-x: hidden;
 }
 /* 라이브러리 */
 /* .con {
@@ -48,7 +47,7 @@ header {
 .top-banner {
     background-color: black;
     color: white;
-    padding: 10px;
+    padding: 10px 0;
 }
 .top-banner .arrow-left {
     padding-left: 360px;
@@ -693,7 +692,6 @@ ul.slide li {
 }
 .footer1_con {
     position: relative;
-    width: 1920px;
     height: 502px;
     margin: 0 auto;
 }
