@@ -69,7 +69,7 @@ header {
     padding-top: 12px;
  }
 header .topbar_wrap {
-    width: 1920px;
+    /* width: 1920px; */
     height: 72px;
     margin-left: 360px;
 }
@@ -803,23 +803,19 @@ ul.slide li {
 .footer2_wrap .footer_tit1 {
     margin-top: 30px;
     width: 466px;
-    height: 150px;
 }
 .footer2_wrap .footer_tit1 li {
     color: #DBDBDB;
     width: 700px;
-    height: 150px;
     font-size: 12px;
 }
 .footer2_wrap .footer_tit2 {
     margin-top: 30px;
     padding-right: 40px;
     width: 430px;
-    height: 150px;
 }
 .footer2_wrap .footer_tit2 li {
     color: #DBDBDB;
     width:  500px;
-    height: 150px;
     font-size: 12px;
 }
