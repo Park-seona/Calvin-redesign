@@ -26,6 +26,19 @@ $(document).ready(function(){
         },
     });
 
+    // //뷰몰배너 스와이퍼 
+    // var swiper = new Swiper('.swiper2', {
+    //     direction: 'vertical',
+    //     slidesPerView: 2, 
+    //     slidesperColumn: 2;
+    //     spaceBetween: 14,
+
+    //     scrollbar: {
+    //         el: '.swiper-scrollbar',
+    //         draggable: true, // 지우면 `false` 기본값, 스크롤바 드래그해서 이동 가능
+    //       },
+
+    // });
     //컬렉션 배너
     $(".contents .item1_wrapper .item1 img,.item1_wrapper .item1_box").mouseenter(function(){
         $(".contents .collection_banner .item1_wrapper .item1_box").stop().animate({"bottom":"15px"},280);
